@@ -10,7 +10,7 @@ orders as (
 
     select
        *
-    from {{ ref('stg_orders') }}
+    from {{ ref('stg_jaffle_shop__orders') }}
 
 ),
 
