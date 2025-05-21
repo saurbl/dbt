@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop
+    description: Staged customer data from our jaffle shop app.
     database: raw
     schema: jaffle_shop
     tables:
