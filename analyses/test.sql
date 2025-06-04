@@ -28,3 +28,15 @@ i want coffee
 } %}
 
 {{ person.name}}
+
+
+
+
+select * from {{ ref('orders_snapshot') }}
+
+
+select * from {{ source('jaffle_shop','orders') }}
+
+select * from {{ ref('fct_orders') }}
+
+select {{get_date_parts(order_date)}} from {{ ref('fct_orders') }}
